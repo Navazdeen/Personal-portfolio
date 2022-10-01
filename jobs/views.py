@@ -21,6 +21,7 @@ def services(request):
 
 def portfolio(request):
     jobs = Job.objects.all()
+    print(jobs)
     return render(request, 'jobs/portfolio.html', {'jobs': jobs})
 
 
